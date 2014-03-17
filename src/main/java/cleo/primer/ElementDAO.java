@@ -38,9 +38,9 @@ public enum ElementDAO implements RestDAO<ElementDTO> {
     
     private ElementDAO () {
         try {
-            String name = System.getProperty("cleo.instance.name");
-            String type = System.getProperty("cleo.instance.type");
-            String conf = System.getProperty("cleo.instance.conf");
+            String name = "Company";                                        //TODO: System.getProperty("cleo.instance.name");
+            String type = "cleo.primer.GenericTypeaheadInstance";           //TODO: System.getProperty("cleo.instance.type");
+            String conf = "src/main/resources/config/generic-typeahead";    //TODO: System.getProperty("cleo.instance.conf");
             File confPath = new File(conf);
             
             @SuppressWarnings("unchecked")
